@@ -25,7 +25,7 @@ from . import (
 )
 from .logging import get_saml_logger
 
-logger = get_saml_logger()
+logger = logging.getLogger(__name__)
 
 # The 'schemes' argument for the URLValidator was introduced in Django 1.6. This
 # ensure that URL validation works in 1.5 as well.

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, print_function, unicode_literals
 import base64
+import logging
 import time
 import uuid
 import zlib
@@ -53,7 +54,7 @@ class Processor(object):
     def __init__(self, config, name=None):
         self.name = name
         self._config = config.copy()
-        self._logger = get_saml_logger()
+        self._logger = logging.getLogger(__name__)
 
         processor_path = self._config.get('processor', 'invalid')
 

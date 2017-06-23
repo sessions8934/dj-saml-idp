@@ -12,7 +12,7 @@ from django.core.exceptions import ImproperlyConfigured
 from . import (exceptions, saml2idp_metadata)
 from .logging import get_saml_logger
 
-logger = get_saml_logger()
+logger = logging.getLogger(__name__)
 
 
 def get_processor(name, config):

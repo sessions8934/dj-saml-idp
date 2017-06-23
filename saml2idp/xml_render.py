@@ -13,9 +13,8 @@ from .xml_templates import (ATTRIBUTE,
                             RESPONSE,
                             SUBJECT)
 
-from .logging import get_saml_logger
 
-logger = get_saml_logger()
+logger = logging.getLogger(__name__)
 
 
 def _get_attribute_statement(params):
