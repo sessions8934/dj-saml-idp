@@ -12,9 +12,9 @@ with open('HISTORY.md') as history:
 
 
 setup(
-    name='dj-saml-idp',
+    name='django-saml-idp',
     version=saml2idp.__version__,
-    author='Sebastian Vetter',
+    author='Gabriel de Forest, Sebastian Vetter',
     author_email='sebastian@mobify.com',
     description='SAML 2.0 IdP for Django',
     long_description='\n\n'.join([description, changelog]),
@@ -27,7 +27,7 @@ setup(
     ],
     license='MIT',
     packages=['saml2idp'],
-    url='http://github.com/mobify/dj-saml-idp',
+    url='http://github.com/deforestg/dj-saml-idp',
     zip_safe=False,
     include_package_data=True,
 )
