@@ -14,3 +14,7 @@
 # Python release artifacts
 build/
 dist/
+
+# virtualenv
+venv
+

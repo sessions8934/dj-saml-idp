@@ -1,23 +1,25 @@
-from django.conf.urls import patterns, include
+from django.conf.urls import include, url
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
 
-urlpatterns = patterns('',
+from django.contrib.auth.views import login
+
+urlpatterns = [
     # Example:
-    # (r'^idptest/', include('idptest.foo.urls')),
+    # url(r'^idptest/', include('idptest.foo.urls')),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs'
     # to INSTALLED_APPS to enable admin documentation:
-    # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    (r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', include(admin.site.urls)),
 
     # Required for login:
-    (r'^accounts/login/$', 'django.contrib.auth.views.login'),
+    url(r'^accounts/login/$', login),
 
     # URLs for the IDP:
-    (r'^idp/', include('saml2idp.urls')),
-)
+    url(r'^idp/', include('saml2idp.urls')),
+]
