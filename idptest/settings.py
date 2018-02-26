@@ -10,12 +10,13 @@ ADMINS = (
 MANAGERS = ADMINS
 
 import os
-PROJECT_ROOT = os.getcwd()
+from os.path import dirname, abspath, join
+PROJECT_ROOT = dirname(abspath(__file__))
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '%s/idptest.sqlite' % PROJECT_ROOT,                      # Or path to database file if using sqlite3.
+        'NAME': join(PROJECT_ROOT, 'idptest.sqlite'), # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -106,8 +107,8 @@ SAML2IDP_CONFIG = {
     'autosubmit': False,
     'issuer': 'http://127.0.0.1:8000',
     'signing': True,
-    'certificate_file': PROJECT_ROOT + '/keys/sample/sample-certificate.pem',
-    'private_key_file': PROJECT_ROOT + '/keys/sample/sample-private-key.pem',
+    'certificate_file': join(PROJECT_ROOT, 'keys/sample/sample-certificate.pem'),
+    'private_key_file': join(PROJECT_ROOT, 'keys/sample/sample-private-key.pem'),
 }
 
 demoSpConfig = {
