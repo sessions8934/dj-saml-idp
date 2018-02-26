@@ -16,7 +16,7 @@ RUNNING THE SAMPLE PROJECT
 This project comes with a working sample Django project called "idptest".
 You can download it and run it as-is, using standard Django commands:
 
-$ svn co https://django-saml2-idp.googlecode.com/svn/trunk django-saml2-idp-readonly
+$ git clone https://github.com/deforestg/dj-saml-idp.git django-saml2-idp-readonly
 $ cd django-saml2-idp-readonly/idptest
 $ python manage.py syncdb
 $ python manage.py runserver
@@ -36,8 +36,12 @@ Get the code for the saml2idp app
 ---------------------------------
 - Download and install the "saml2idp" app from this project site:
 
-$ svn co https://django-saml2-idp.googlecode.com/svn/trunk/idptest/saml2idp
-$ cd saml2idp
+$ pip install django-saml-idp
+
+or
+
+$ git clone https://github.com/deforestg/dj-saml-idp.git
+$ cd dj-saml-idp
 $ sudo python setup.py install
 
 Configure the URLs
