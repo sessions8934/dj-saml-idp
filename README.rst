@@ -1,13 +1,9 @@
 dj-saml-idp
 ===========
 
-.. image:: https://travis-ci.org/mobify/dj-saml-idp.svg?branch=master
-    :target: https://travis-ci.org/mobify/dj-saml-idp
+This is a fork `mobify/dj-saml-idp`_ that is distributed indipendantly as `django-saml-idp`.
 
-
-This is a fork `novapost/django-saml2-idp`_ that is distributed indipendantly as `dj-saml-idp`.
-
-`dj-saml-idp` implements the Identity Provider side of the SAML 2.0 protocol
+`django-saml-idp` implements the Identity Provider side of the SAML 2.0 protocol
 and makes user authentication available to external applications.
 
 **Note:** Only supports Django 1.5+.
