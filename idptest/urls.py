@@ -1,11 +1,10 @@
-from django.conf.urls import url, include
-from django.contrib.auth.views import login
+from django.conf.urls import include, url
+from django.contrib.auth import login
+
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
-import django.contrib.auth.views
 
 admin.autodiscover()
-
 urlpatterns = [
     # Example:
     # url(r'^idptest/', include('idptest.foo.urls')),
