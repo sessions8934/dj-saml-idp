@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
-from __future__ import absolute_import
 """
 Registers and loads Processor classes from settings.
 """
-import logging
+from __future__ import absolute_import, print_function, unicode_literals
 import warnings
 
 from importlib import import_module
 
 from django.core.exceptions import ImproperlyConfigured
 
-from . import exceptions
-from . import saml2idp_metadata
+from . import (exceptions, saml2idp_metadata)
+from .logging import get_saml_logger
 
 logger = logging.getLogger(__name__)
 

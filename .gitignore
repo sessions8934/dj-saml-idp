@@ -16,6 +16,9 @@
 build/
 dist/
 
-# virtualenv
-venv
+# IDEs
+.idea/
 
+# Local venvs
+venv/
+venv3/

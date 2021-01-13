@@ -3,11 +3,11 @@ from setuptools import setup
 import saml2idp
 
 
-with open('README.rst') as readme:
+with open('README.md') as readme:
     description = readme.read()
 
 
-with open('HISTORY.rst') as history:
+with open('HISTORY.md') as history:
     changelog = history.read()
 
 
@@ -19,10 +19,12 @@ setup(
     description='SAML 2.0 IdP for Django',
     long_description='\n\n'.join([description, changelog]),
     install_requires=[
-        'Django>=1.8',
-        'M2Crypto==0.26.0',
-        'BeautifulSoup>=3.2.0',
-        'structlog'],
+        'Django<2',
+        'M2Crypto>=0.35.2',
+        'beautifulsoup4>=4.8.1',
+        'structlog==16.1.0',
+        'lxml==4.4.1'
+    ],
     license='MIT',
     packages=['saml2idp'],
     url='http://github.com/deforestg/dj-saml-idp',
