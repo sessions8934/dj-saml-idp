@@ -21,7 +21,7 @@ setup(
     install_requires=[
         'Django>=2.2.*',
         'M2Crypto==0.26.0',
-        'BeautifulSoup>=3.2.0',
+        'beautifulsoup4>=4.7.1',
         'structlog'
     ],
     license='MIT',
