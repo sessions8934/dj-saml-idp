@@ -8,7 +8,7 @@ The original project is at https://github.com/guitarmanvt/django-saml2-idp
 protocol and makes user authentication available to external applications.
 
 This package only supports Django 1.9+. At this time, it's only been tested
-with Django 1.9 & 1.11
+with Django > 1.9
 
 # Development And Testing 
 
