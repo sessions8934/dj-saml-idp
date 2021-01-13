@@ -1,7 +1,6 @@
 # dj-saml-idp
 
-This started as a fork of `novapost/django-saml2-idp`, distributed
-independently as `dj-saml-idp`.
+This is a fork `mobify/dj-saml-idp` that is distributed indipendantly as `django-saml-idp`.
 
 The original project is at https://github.com/guitarmanvt/django-saml2-idp
 
