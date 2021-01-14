@@ -19,11 +19,10 @@ setup(
     description='SAML 2.0 IdP for Django',
     long_description='\n\n'.join([description, changelog]),
     install_requires=[
-        'Django<2',
-        'M2Crypto>=0.35.2',
-        'beautifulsoup4>=4.8.1',
-        'structlog==16.1.0',
-        'lxml==4.4.1'
+        'Django>=1.9.*',
+        'M2Crypto==0.37.1',
+        'beautifulsoup4>=4.7.1',
+        'structlog'
     ],
     license='MIT',
     packages=['saml2idp'],
