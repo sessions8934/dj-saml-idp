@@ -13,7 +13,6 @@ from . import codex
 from . import exceptions
 from . import saml2idp_metadata
 from . import xml_render
-from .logging import get_saml_logger
 from .utils import CaseInsensitiveDict
 
 MINUTES = 60

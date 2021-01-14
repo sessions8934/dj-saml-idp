@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, print_function, unicode_literals
 
+import logging
 import os
 
 from django.contrib import auth
@@ -23,7 +24,6 @@ from . import (
     registry,
     xml_signing
 )
-from .logging import get_saml_logger
 
 logger = logging.getLogger(__name__)
 

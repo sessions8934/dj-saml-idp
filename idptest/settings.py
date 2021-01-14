@@ -19,7 +19,7 @@ PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': join(PROJECT_ROOT, 'idptest.sqlite'), # Or path to database file if using sqlite3.
+        'NAME': os.path.join(PROJECT_ROOT, 'idptest.sqlite'), # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -130,8 +130,8 @@ SAML2IDP_CONFIG = {
     'autosubmit': False,
     'issuer': 'http://127.0.0.1:8000',
     'signing': True,
-    'certificate_file': join(PROJECT_ROOT, 'keys/sample/sample-certificate.pem'),
-    'private_key_file': join(PROJECT_ROOT, 'keys/sample/sample-private-key.pem'),
+    'certificate_file': os.path.join(PROJECT_ROOT, 'keys/sample/sample-certificate.pem'),
+    'private_key_file': os.path.join(PROJECT_ROOT, 'keys/sample/sample-private-key.pem'),
 }
 
 demoSpConfig = {
