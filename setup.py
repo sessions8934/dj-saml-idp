@@ -18,6 +18,7 @@ setup(
     author_email='sebastian@mobify.com',
     description='SAML 2.0 IdP for Django',
     long_description='\n\n'.join([description, changelog]),
+    long_description_content_type='text/markdown',
     install_requires=[
         'Django>=1.9.*',
         'M2Crypto==0.37.1',
