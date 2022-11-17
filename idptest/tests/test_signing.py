@@ -3,8 +3,7 @@ from __future__ import absolute_import, print_function, unicode_literals
 import os
 import string
 import unittest
-
-from django.utils import six
+import six
 
 from saml2idp import xml_render
 from saml2idp import xml_signing

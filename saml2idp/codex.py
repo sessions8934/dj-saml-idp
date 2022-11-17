@@ -3,8 +3,7 @@ from __future__ import absolute_import, print_function, unicode_literals
 # http://stackoverflow.com/questions/1089662/python-inflate-and-deflate-implementations
 import zlib
 import base64
-
-from django.utils import six
+import six
 
 def decode_base64_and_inflate( b64string ):
     # b64decode needs a bytes-like object, so

@@ -1,5 +1,8 @@
 from __future__ import absolute_import, print_function, unicode_literals
-from django.conf.urls import url
+try:
+    from django.urls import re_path as url
+except ImportError:
+    from django.conf.urls import url
 from .views import descriptor, login_begin, login_init, login_process, logout
 from .metadata import get_deeplink_resources
 

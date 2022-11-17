@@ -10,6 +10,7 @@ from __future__ import absolute_import, print_function, unicode_literals
 import os
 import mock
 import pytest
+import six
 
 from django.http import HttpResponseRedirect
 from django.contrib.auth.models import User
@@ -18,7 +19,6 @@ try:
 except ImportError:
     from django.core.urlresolvers import reverse
 from django.test import TestCase
-from django.utils import six
 
 from saml2idp import views
 from saml2idp import exceptions

@@ -6,9 +6,9 @@ from __future__ import absolute_import, print_function, unicode_literals
 import hashlib
 import logging
 import string
+import six
 
 import M2Crypto
-from django.utils import six
 
 from . import saml2idp_metadata as smd
 from .codex import nice64

@@ -1,14 +1,14 @@
 # dj-saml-idp
 
-This is a fork `mobify/dj-saml-idp` that is distributed indipendantly as `django-saml-idp`.
+This is a fork of `deforestg/dj-saml-idp` which is a fork of `mobify/dj-saml-idp` 
+that is distributed independently as `django4-saml-idp`.
 
 The original project is at https://github.com/guitarmanvt/django-saml2-idp
 
 `dj-saml-idp` implements the Identity Provider (IDP) side of the SAML 2.0
 protocol and makes user authentication available to external applications.
 
-This package only supports Django 1.9+. At this time, it's only been tested
-with Django > 1.9
+This package supports Django 1.9+ through 4.1.3.
 
 # Development And Testing 
 
@@ -17,7 +17,7 @@ tests. The container creates virtual environments for different
 Python versions as below:
 
 * Python 2.7 in `/venv27`
-* Python 3.7 in `/venv37`
+* Python 3.8 in `/venv38`
 
 These environments may be used for development and interactive testing.
 
@@ -37,7 +37,7 @@ the tests against different versions of Python and Django. The tests
 can be run inside the Docker container using `tox`:
 
 ```bash
-$ . /venv37/bin/activate
+$ . /venv38/bin/activate
 $ tox
 ```
 
@@ -67,7 +67,7 @@ is make sure that all the test are passing and that the version in
 With that done, all you need to do is run the following commands::
 
 ```
-$ rm -rf build/ dist/ dj_saml_idp.egg-info
+$ rm -rf build/ dist/ django_saml_idp.egg-info
 $ make release
 ```
 
