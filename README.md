@@ -1,9 +1,11 @@
 # dj-saml-idp
 
-This is a fork of `deforestg/dj-saml-idp` which is a fork of `mobify/dj-saml-idp` 
-that is distributed independently as `django4-saml-idp`.
+This project is a fork of [bctiemann/dj-saml-idp](https://github.com/bctiemann/dj-saml-idp),  
+which itself is a fork of [deforestg/dj-saml-idp](https://github.com/deforestg/dj-saml-idp),  
+originating from the original [mobify/dj-saml-idp](https://github.com/mobify/dj-saml-idp).
 
-The original project is at https://github.com/guitarmanvt/django-saml2-idp
+The original project was created by Mobify Research & Development Inc. and is licensed under the MIT License.  
+This fork updates compatibility to Django 3.2+ and fixes package metadata issues.
 
 `dj-saml-idp` implements the Identity Provider (IDP) side of the SAML 2.0
 protocol and makes user authentication available to external applications.

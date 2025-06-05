@@ -12,15 +12,17 @@ with open('HISTORY.md') as history:
 
 
 setup(
-    name='django-saml-idp',
+    name='django-saml-idp-32',
     version=saml2idp.__version__,
     author='Gabriel de Forest, Brian Tiemann, Sebastian Vetter',
     author_email='sebastian@mobify.com',
-    description='SAML 2.0 IdP for Django',
+    maintainer='Ceejay Guiking',
+    maintainer_email='ceejay.guiking@mpulse.com',
+    description='SAML 2.0 IdP for Django (patched fork for Django 3.2+ compatibility)',
     long_description='\n\n'.join([description, changelog]),
     long_description_content_type='text/markdown',
     install_requires=[
-        'Django>=1.9.*',
+        'Django>=3.2',
         'M2Crypto>=0.38.0',
         'beautifulsoup4>=4.7.1',
         'structlog',
@@ -28,7 +30,7 @@ setup(
     ],
     license='MIT',
     packages=['saml2idp'],
-    url='https://github.com/bctiemann/dj-saml-idp',
+    url='https://github.com/sessions8934/dj-saml-idp',
     zip_safe=False,
     include_package_data=True,
 )
