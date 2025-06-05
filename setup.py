@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from setuptools import setup
+from setuptools import setup, find_packages
 import saml2idp
 
 
@@ -29,7 +29,7 @@ setup(
         'six',
     ],
     license='MIT',
-    packages=['saml2idp'],
+    packages=find_packages(exclude=['idptest*']),
     url='https://github.com/sessions8934/dj-saml-idp',
     zip_safe=False,
     include_package_data=True,
