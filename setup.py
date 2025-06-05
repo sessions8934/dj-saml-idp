@@ -20,7 +20,7 @@ setup(
     long_description='\n\n'.join([description, changelog]),
     long_description_content_type='text/markdown',
     install_requires=[
-        'Django>=1.9.*',
+        'Django>=3.2',
         'M2Crypto>=0.38.0',
         'beautifulsoup4>=4.7.1',
         'structlog',
